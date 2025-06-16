@@ -1,10 +1,42 @@
+# GPT from Scratch — Karpathy YouTube Reimplementation
 
-# nanogpt-lecture
+This repository is a step-by-step reimplementation of [Andrej Karpathy’s “Let’s Build GPT: from Scratch, in Code”](https://www.youtube.com/watch?v=kCc8FmEb1nY).  
+The project builds a miniature GPT-style language model from the ground up in PyTorch, with all components clearly spelled out and explained.
 
-Code created in the [Neural Networks: Zero To Hero](https://karpathy.ai/zero-to-hero.html) video lecture series, specifically on the first lecture on nanoGPT. Publishing here as a Github repo so people can easily hack it, walk through the `git log` history of it, etc.
+---
 
-NOTE: sadly I did not go too much into model initialization in the video lecture, but it is quite important for good performance. The current code will train and work fine, but its convergence is slower because it starts off in a not great spot in the weight space. Please see [nanoGPT model.py](https://github.com/karpathy/nanoGPT/blob/master/model.py) for `# init all weights` comment, and especially how it calls the `_init_weights` function. Even more sadly, the code in this repo is a bit different in how it names and stores the various modules, so it's not possible to directly copy paste this code here. My current plan is to publish a supplementary video lecture and cover these parts, then I will also push the exact code changes to this repo. For now I'm keeping it as is so it is almost exactly what we actually covered in the video.
+## 📚 Features
 
-### License
+- **Character-level tokenization**: Converts raw text into integer-encoded sequences.
+- **Bigram Language Model**: A simple baseline before introducing transformers.
+- **Transformer Blocks**:  
+  - Embeddings  
+  - Multi-head self-attention  
+  - Layer normalization  
+  - Stacked transformer layers
+- **Training Loop**: Manual forward and backward passes, loss calculation, and optimization.
+- **Text Generation**: Generate new, Shakespearean-style text with your trained model.
 
-MIT
+---
+
+## 🚀 Why This Repo?
+
+The goal is to make modern transformer architectures like GPT approachable for everyone. Every component is implemented from scratch—no black boxes—so you can see exactly how these models work under the hood.
+
+---
+
+## 🔗 Resources
+
+- [Original YouTube Tutorial (Andrej Karpathy)](https://www.youtube.com/watch?v=kCc8FmEb1nY)
+- [nanoGPT (Karpathy’s official minimal GPT repo)](https://github.com/karpathy/nanoGPT)
+- [My Implementation (This Repo)](https://github.com/Fahad-sha/GPT-Shakespeare-Karpathy)
+
+---
+
+## 🛠️ Getting Started
+
+```bash
+git clone https://github.com/Fahad-sha/GPT-Shakespeare-Karpathy.git
+cd GPT-Shakespeare-Karpathy
+pip install -r requirements.txt
+python train.py    # Or run the notebook for a step-by-step walkthrough
