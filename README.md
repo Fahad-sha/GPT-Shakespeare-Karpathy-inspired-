@@ -4,8 +4,7 @@ This repository is a step-by-step reimplementation of [Andrej Karpathy’s “Le
 The project builds a miniature GPT-style language model from the ground up in PyTorch, with all components clearly spelled out and explained.
 
 ---
-mv "Flow chart.png" flowchart.png
-![Model Architecture](Flow chart.png)
+![Model Architecture](flow_chart.png)
 
 
 ## 📚 Features
