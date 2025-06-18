@@ -5,7 +5,7 @@ The project builds a miniature GPT-style language model from the ground up in Py
 
 ---
 
-![Model Architecture](images/Flow chart.png)
+![Model Architecture](Flow chart.png)
 
 ## 📚 Features
 
