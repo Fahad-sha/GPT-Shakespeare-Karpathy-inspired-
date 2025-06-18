@@ -7,6 +7,7 @@ The project builds a miniature GPT-style language model from the ground up in Py
 
 ![Model Architecture](Flow chart.png)
 
+
 ## 📚 Features
 
 - **Character-level tokenization**: Converts raw text into integer-encoded sequences.
